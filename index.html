@@ -7,90 +7,109 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <div class="header-inner">
-      <h1 class="site-title">Handan Yılmaz</h1>
-      <p class="site-subtitle">Physics Engineer, M.Sc. | Radiation Detection, Monte Carlo Simulations, Scientific Computing</p>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">Handan Yılmaz</div>
 
-      <nav>
-        <a href="index.html">Home</a>
+      <nav class="nav">
+        <a href="index.html" class="active">Home</a>
         <a href="projects.html">Projects</a>
         <a href="conferences.html">Conferences</a>
-        <a href="fdf2026.html">FDF 2026 Poster</a>
+        <a href="fdf2026.html">FDF 2026</a>
       </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <div class="photo-placeholder">
-        Your photo can be placed here later
+  <main class="page">
+    <aside class="sidebar">
+      <div class="profile-placeholder">Profile photo here</div>
+      <!-- Fotoğraf eklediğimizde bunu kullanacağız:
+      <img src="images/profile.jpg" alt="Handan Yılmaz" class="profile-photo" />
+      -->
+
+      <h2>Handan Yılmaz</h2>
+      <p class="role">Physics Engineer, M.Sc.</p>
+
+      <div class="sidebar-links">
+        <a href="mailto:yilmazh20@itu.edu.tr"><span>Email</span> · yilmazh20@itu.edu.tr</a>
+        <a href="https://github.com/yilmazhndn" target="_blank"><span>GitHub</span> · profile</a>
+        <a href="projects.html"><span>Projects</span> · selected work</a>
+        <a href="conferences.html"><span>Conferences</span> · research events</a>
+        <a href="fdf2026.html"><span>FDF 2026</span> · poster page</a>
       </div>
+    </aside>
 
-      <div>
-        <h2>Welcome</h2>
-        <p>
-          I am a Physics Engineer with a strong interest in radiation detectors, nuclear instrumentation,
-          Monte Carlo simulations, and experimental validation. My work combines computational modeling,
-          detector systems, data analysis, and applied scientific research in both academic and industrial settings.
-        </p>
+    <section class="content">
+      <div class="card">
+        <h1>Hello, I’m Handan.</h1>
 
-        <p>
-          This website presents my research profile, selected projects, conference participation,
-          publications, and featured scientific activities.
-        </p>
+        <div class="intro-grid">
+          <div class="feature-placeholder">Conference or portrait photo</div>
+          <!-- Fotoğraf eklediğimizde bunu kullanabiliriz:
+          <img src="images/featured.jpg" alt="Handan Yılmaz" class="feature-photo" />
+          -->
 
-        <div class="quick-links">
-          <a class="button" href="projects.html">View Projects</a>
-          <a class="button secondary" href="conferences.html">View Conferences</a>
-          <a class="button secondary" href="mailto:yilmazh20@itu.edu.tr">Contact Me</a>
-        </div>
-      </div>
-    </section>
+          <div class="intro-text">
+            <p>
+              I am a Physics Engineer working at the intersection of experimental physics,
+              detector systems, Monte Carlo simulations, and scientific computing.
+              My work includes Geant4-based modeling, radiation measurements,
+              detector-oriented data analysis, and interdisciplinary engineering applications.
+            </p>
 
-    <section class="section">
-      <h3>About Me</h3>
-      <p>
-        I work on detector-oriented physics applications including neutron and gamma-ray measurements,
-        Geant4-based simulations, shielding studies, waveform-oriented workflows, and experimental data analysis.
-        My background includes academic research, industrial R&D projects, and conference presentations in interdisciplinary environments.
-      </p>
-    </section>
-
-    <section class="section">
-      <h3>Highlighted Areas</h3>
-      <div class="grid-2">
-        <div class="card">
-          <h4>Research Interests</h4>
-          <ul class="list-clean">
-            <li>Radiation detectors and instrumentation</li>
-            <li>Geant4 and Monte Carlo simulation</li>
-            <li>Neutron and gamma-ray measurements</li>
-            <li>Signal processing and detector workflows</li>
-            <li>Scientific data analysis and visualization</li>
-          </ul>
+            <p>
+              This website presents my academic profile, selected projects, conference participation,
+              featured poster work, and research-related activities.
+            </p>
+          </div>
         </div>
 
-        <div class="card">
-          <h4>Featured Links</h4>
-          <ul class="list-clean">
-            <li><a href="fdf2026.html">CERN FDF 2026 poster page</a></li>
-            <li><a href="projects.html">Selected projects</a></li>
-            <li><a href="conferences.html">Conference participation</a></li>
-            <li><a href="mailto:yilmazh20@itu.edu.tr">Email</a></li>
-            <li><a href="https://github.com/yilmazhndn" target="_blank">GitHub</a></li>
+        <div class="note-box">
+          <h4>In a nutshell</h4>
+          <ul>
+            <li>I work on radiation detection, detector systems, and applied nuclear instrumentation.</li>
+            <li>I use Geant4, computational modeling, and experimental validation together.</li>
+            <li>My interests include neutron and gamma-ray studies, shielding, waveform workflows, and scientific reporting.</li>
+            <li>I aim to build a research profile connecting physics, engineering, and real-world applications.</li>
           </ul>
         </div>
       </div>
-    </section>
 
-    <section class="section">
-      <h3>Current Focus</h3>
-      <p>
-        I am particularly interested in detector-related simulation workflows, experimental validation,
-        neutron activation-based systems, FPGA-oriented signal generation pipelines, and the broader interface
-        between physics modeling and practical engineering applications.
-      </p>
+      <div class="card">
+        <h3>Research Profile</h3>
+        <div class="grid-two">
+          <div class="soft-card">
+            <h4>Research Interests</h4>
+            <div class="tag-list">
+              <span class="tag">Radiation Detectors</span>
+              <span class="tag">Geant4</span>
+              <span class="tag">Monte Carlo</span>
+              <span class="tag">Neutron Physics</span>
+              <span class="tag">Gamma Measurements</span>
+              <span class="tag">Scientific Computing</span>
+              <span class="tag">Shielding</span>
+              <span class="tag">Detector Readout</span>
+            </div>
+          </div>
+
+          <div class="soft-card">
+            <h4>Quick Access</h4>
+            <p><a href="projects.html">View selected projects</a></p>
+            <p><a href="conferences.html">See conferences and scientific events</a></p>
+            <p><a href="fdf2026.html">Open the CERN FDF 2026 poster page</a></p>
+            <p><a href="mailto:yilmazh20@itu.edu.tr">Contact by email</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Current Focus</h3>
+        <p>
+          My recent work focuses on detector-related simulation workflows, neutron activation-based systems,
+          realistic signal generation pipelines, shielding-oriented studies, and research communication through
+          conference posters and technical reporting.
+        </p>
+      </div>
     </section>
   </main>
 
