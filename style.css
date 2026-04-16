@@ -313,3 +313,20 @@ h3 {
     padding: 36px 24px;
   }
 }
+.hero-links a {
+  color: #5e5852;
+  transition: color 0.2s ease;
+}
+
+.hero-links a:hover {
+  color: #111;
+}
+
+.contact-tags a {
+  color: inherit;
+  transition: color 0.2s ease;
+}
+
+.contact-tags a:hover {
+  color: white;
+}
