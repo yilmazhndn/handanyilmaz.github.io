@@ -339,3 +339,65 @@ h3 {
 .list-item a:hover {
   opacity: 0.7;
 }
+
+.events-group {
+  margin-top: 3.5rem;
+}
+
+.events-group:first-of-type {
+  margin-top: 2.5rem;
+}
+
+.events-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #2a2a2a;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.event-card {
+  background: #ffffff;
+  border: 1px solid #e5ddd5;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+}
+
+.event-image {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+.event-content {
+  padding: 1.5rem;
+}
+
+.event-date {
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8a8178;
+  margin-bottom: 0.8rem;
+}
+
+.event-card h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0.7rem;
+}
+
+.event-card p {
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .event-grid {
+    grid-template-columns: 1fr;
+  }
+}
