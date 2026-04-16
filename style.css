@@ -462,3 +462,6 @@ h3 {
     grid-template-columns: 1fr;
   }
 }
+.event-image-top {
+  object-position: center top;
+}
