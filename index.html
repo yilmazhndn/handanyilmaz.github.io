@@ -1,279 +1,168 @@
-export default function HandanPortfolioSite() {
-  const navItems = [
-    "About",
-    "Research",
-    "Projects",
-    "Publications",
-    "Events",
-    "Contact",
-  ];
-
-  const researchAreas = [
-    "Monte Carlo Simulation",
-    "Radiation Detection",
-    "Experimental Physics",
-    "Detector Modeling",
-    "Data Analysis",
-    "Medical Physics",
-  ];
-
-  const projectCards = [
-    {
-      title: "Project Title 01",
-      subtitle: "Short category or collaboration",
-      description:
-        "Write a concise 2–3 sentence summary of the project here. Mention the goal, methods, and impact.",
-    },
-    {
-      title: "Project Title 02",
-      subtitle: "Short category or collaboration",
-      description:
-        "Write a concise 2–3 sentence summary of the project here. Mention the goal, methods, and impact.",
-    },
-    {
-      title: "Project Title 03",
-      subtitle: "Short category or collaboration",
-      description:
-        "Write a concise 2–3 sentence summary of the project here. Mention the goal, methods, and impact.",
-    },
-  ];
-
-  const publications = [
-    "Publication title placeholder — Journal / Conference, Year",
-    "Publication title placeholder — Journal / Conference, Year",
-    "Publication title placeholder — Journal / Conference, Year",
-    "Publication title placeholder — Journal / Conference, Year",
-  ];
-
-  const events = [
-    "Conference / School / Workshop — Year",
-    "Conference / School / Workshop — Year",
-    "Conference / School / Workshop — Year",
-    "Conference / School / Workshop — Year",
-  ];
-
-  return (
-    <div className="min-h-screen bg-stone-50 text-stone-900 scroll-smooth">
-      <header className="sticky top-0 z-50 border-b border-stone-200/80 bg-stone-50/90 backdrop-blur">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 lg:px-8">
-          <a href="#home" className="text-lg font-semibold tracking-tight">
-            Handan Yılmaz
-          </a>
-          <nav className="hidden gap-6 md:flex">
-            {navItems.map((item) => (
-              <a
-                key={item}
-                href={`#${item.toLowerCase()}`}
-                className="text-sm text-stone-600 transition hover:text-stone-950"
-              >
-                {item}
-              </a>
-            ))}
-          </nav>
-        </div>
-      </header>
-
-      <main id="home">
-        <section className="mx-auto grid max-w-6xl grid-cols-1 gap-12 px-6 py-20 lg:grid-cols-[1.2fr_0.8fr] lg:px-8 lg:py-28">
-          <div className="flex flex-col justify-center">
-            <p className="mb-4 text-sm uppercase tracking-[0.25em] text-stone-500">
-              Physics Engineer · Research Portfolio
-            </p>
-            <h1 className="max-w-3xl text-5xl font-semibold tracking-tight text-stone-950 sm:text-6xl">
-              Handan Yılmaz
-            </h1>
-            <p className="mt-5 max-w-2xl text-lg leading-8 text-stone-600">
-              A clean personal website for research, publications, projects, and
-              scientific activities. Replace this paragraph with your own short
-              professional introduction.
-            </p>
-
-            <div className="mt-8 flex flex-wrap gap-3">
-              <a
-                href="#projects"
-                className="rounded-full bg-stone-900 px-5 py-3 text-sm font-medium text-white transition hover:bg-stone-700"
-              >
-                View Projects
-              </a>
-              <a
-                href="#contact"
-                className="rounded-full border border-stone-300 px-5 py-3 text-sm font-medium text-stone-800 transition hover:border-stone-900"
-              >
-                Contact
-              </a>
-            </div>
-
-            <div className="mt-10 flex flex-wrap items-center gap-4 text-sm text-stone-600">
-              <span>email@example.com</span>
-              <span>LinkedIn</span>
-              <span>ResearchGate</span>
-              <span>GitHub</span>
-            </div>
-          </div>
-
-          <div className="flex items-center justify-center">
-            <div className="w-full max-w-md rounded-[2rem] border border-stone-200 bg-white p-5 shadow-[0_20px_80px_-30px_rgba(0,0,0,0.18)]">
-              <div className="aspect-[4/5] w-full rounded-[1.5rem] bg-gradient-to-br from-stone-200 via-stone-100 to-stone-300" />
-              <div className="px-2 pb-2 pt-5">
-                <p className="text-sm uppercase tracking-[0.2em] text-stone-500">
-                  Profile Image Area
-                </p>
-                <p className="mt-2 text-sm leading-7 text-stone-600">
-                  Replace this placeholder with your main portrait or a strong
-                  conference photograph.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="about" className="border-t border-stone-200 bg-white">
-          <div className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
-            <div className="max-w-3xl">
-              <p className="text-sm uppercase tracking-[0.25em] text-stone-500">
-                About
-              </p>
-              <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
-                A focused academic and professional presence
-              </h2>
-              <p className="mt-6 text-base leading-8 text-stone-600">
-                This section is for your short biography. You can describe your
-                background, current work, core interests, and long-term research
-                direction in a few well-written paragraphs.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section id="research" className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
-          <div className="mb-10 max-w-2xl">
-            <p className="text-sm uppercase tracking-[0.25em] text-stone-500">
-              Research
-            </p>
-            <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
-              Areas of interest
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {researchAreas.map((area) => (
-              <div
-                key={area}
-                className="rounded-3xl border border-stone-200 bg-white p-6 shadow-sm"
-              >
-                <p className="text-lg font-medium">{area}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section id="projects" className="border-y border-stone-200 bg-white">
-          <div className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
-            <div className="mb-10 max-w-2xl">
-              <p className="text-sm uppercase tracking-[0.25em] text-stone-500">
-                Projects
-              </p>
-              <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
-                Selected work
-              </h2>
-            </div>
-
-            <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
-              {projectCards.map((project) => (
-                <article
-                  key={project.title}
-                  className="rounded-[2rem] border border-stone-200 bg-stone-50 p-6 transition hover:-translate-y-1 hover:shadow-lg"
-                >
-                  <p className="text-sm uppercase tracking-[0.18em] text-stone-500">
-                    {project.subtitle}
-                  </p>
-                  <h3 className="mt-3 text-2xl font-semibold tracking-tight">
-                    {project.title}
-                  </h3>
-                  <p className="mt-4 text-sm leading-7 text-stone-600">
-                    {project.description}
-                  </p>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section id="publications" className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
-          <div className="mb-10 max-w-2xl">
-            <p className="text-sm uppercase tracking-[0.25em] text-stone-500">
-              Publications
-            </p>
-            <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
-              Selected publications
-            </h2>
-          </div>
-
-          <div className="rounded-[2rem] border border-stone-200 bg-white p-8 shadow-sm">
-            <div className="space-y-6">
-              {publications.map((item, idx) => (
-                <div key={idx} className="border-b border-stone-200 pb-6 last:border-b-0 last:pb-0">
-                  <p className="text-base leading-8 text-stone-700">{item}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section id="events" className="border-y border-stone-200 bg-white">
-          <div className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
-            <div className="mb-10 max-w-2xl">
-              <p className="text-sm uppercase tracking-[0.25em] text-stone-500">
-                Events
-              </p>
-              <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
-                Conferences and scientific activities
-              </h2>
-            </div>
-
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-              {events.map((event, idx) => (
-                <div
-                  key={idx}
-                  className="rounded-3xl border border-stone-200 bg-stone-50 p-6"
-                >
-                  <p className="text-base text-stone-700">{event}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section id="contact" className="mx-auto max-w-6xl px-6 py-20 lg:px-8">
-          <div className="rounded-[2rem] border border-stone-200 bg-stone-900 px-8 py-12 text-white shadow-[0_20px_80px_-30px_rgba(0,0,0,0.35)]">
-            <p className="text-sm uppercase tracking-[0.25em] text-stone-300">
-              Contact
-            </p>
-            <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
-              Let’s connect
-            </h2>
-            <p className="mt-5 max-w-2xl text-base leading-8 text-stone-300">
-              Add your contact details, academic profiles, and a short sentence
-              for collaborations, research discussions, or project inquiries.
-            </p>
-
-            <div className="mt-8 flex flex-wrap gap-3 text-sm">
-              <span className="rounded-full border border-white/20 px-4 py-2">
-                email@example.com
-              </span>
-              <span className="rounded-full border border-white/20 px-4 py-2">
-                LinkedIn
-              </span>
-              <span className="rounded-full border border-white/20 px-4 py-2">
-                ResearchGate
-              </span>
-              <span className="rounded-full border border-white/20 px-4 py-2">
-                GitHub
-              </span>
-            </div>
-          </div>
-        </section>
-      </main>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Handan Yılmaz | Physics Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#home" class="logo">Handan Yılmaz</a>
+      <nav class="menu">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-  );
-}
+  </header>
+
+  <main id="home">
+    <section class="hero container">
+      <div class="hero-text">
+        <p class="eyebrow">Physics Engineer · Research Portfolio</p>
+        <h1>Handan Yılmaz</h1>
+        <p class="intro">
+          Physics Engineer with interests in radiation detection, Monte Carlo simulation,
+          experimental systems, and scientific computing. This website presents my research,
+          selected projects, publications, and academic activities.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-dark">View Projects</a>
+          <a href="#contact" class="btn btn-light">Contact</a>
+        </div>
+
+        <div class="hero-links">
+          <span>yilmazh20@itu.edu.tr</span>
+          <span>LinkedIn</span>
+          <span>ResearchGate</span>
+          <span>GitHub</span>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="profile-card">
+          <img src="profile.png" alt="Handan Yılmaz" class="profile-image">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section section-light">
+      <div class="container narrow">
+        <p class="eyebrow">About</p>
+        <h2>A focused academic and professional presence</h2>
+        <p>
+          Write your short biography here. You can describe your educational background,
+          your current work, your scientific interests, and the research directions you
+          want to pursue in the future.
+        </p>
+      </div>
+    </section>
+
+    <section id="research" class="section">
+      <div class="container">
+        <p class="eyebrow">Research</p>
+        <h2>Areas of interest</h2>
+
+        <div class="grid three">
+          <div class="card small-card">Monte Carlo Simulation</div>
+          <div class="card small-card">Radiation Detection</div>
+          <div class="card small-card">Experimental Physics</div>
+          <div class="card small-card">Detector Modeling</div>
+          <div class="card small-card">Data Analysis</div>
+          <div class="card small-card">Medical Physics</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-light">
+      <div class="container">
+        <p class="eyebrow">Projects</p>
+        <h2>Selected work</h2>
+
+        <div class="grid three">
+          <div class="card project-card">
+            <p class="card-label">Collaboration / Research</p>
+            <h3>Project Title 01</h3>
+            <p>
+              Write a short summary of this project here. Mention the goal, methods,
+              technical tools, and scientific relevance.
+            </p>
+          </div>
+
+          <div class="card project-card">
+            <p class="card-label">Collaboration / Research</p>
+            <h3>Project Title 02</h3>
+            <p>
+              Write a short summary of this project here. Mention the goal, methods,
+              technical tools, and scientific relevance.
+            </p>
+          </div>
+
+          <div class="card project-card">
+            <p class="card-label">Collaboration / Research</p>
+            <h3>Project Title 03</h3>
+            <p>
+              Write a short summary of this project here. Mention the goal, methods,
+              technical tools, and scientific relevance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="section">
+      <div class="container">
+        <p class="eyebrow">Publications</p>
+        <h2>Selected publications</h2>
+
+        <div class="list-box">
+          <div class="list-item">Publication title placeholder — Journal / Conference, Year</div>
+          <div class="list-item">Publication title placeholder — Journal / Conference, Year</div>
+          <div class="list-item">Publication title placeholder — Journal / Conference, Year</div>
+          <div class="list-item">Publication title placeholder — Journal / Conference, Year</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="events" class="section section-light">
+      <div class="container">
+        <p class="eyebrow">Events</p>
+        <h2>Conferences and scientific activities</h2>
+
+        <div class="grid two">
+          <div class="card">Conference / School / Workshop — Year</div>
+          <div class="card">Conference / School / Workshop — Year</div>
+          <div class="card">Conference / School / Workshop — Year</div>
+          <div class="card">Conference / School / Workshop — Year</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact-box">
+          <p class="eyebrow dark">Contact</p>
+          <h2>Let’s connect</h2>
+          <p>
+            Add your contact details, academic profiles, and a short message for
+            collaborations, research discussions, or professional inquiries.
+          </p>
+
+          <div class="contact-tags">
+            <span>yilmazh20@itu.edu.tr</span>
+            <span>LinkedIn</span>
+            <span>ResearchGate</span>
+            <span>GitHub</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
