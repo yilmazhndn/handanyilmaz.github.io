@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FDF 2026 Poster | Handan Yılmaz</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      max-width: 1050px;
+      margin: 40px auto;
+      padding: 0 22px;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #222;
+    }
+
+    h1, h2, h3 {
+      color: #005F73;
+    }
+
+    .card {
+      background: #f7fafb;
+      border-left: 5px solid #005F73;
+      padding: 18px 20px;
+      margin: 22px 0;
+      border-radius: 8px;
+    }
+
+    a {
+      color: #0A9396;
+      font-weight: 600;
+    }
+
+    .button-row a {
+      display: inline-block;
+      margin: 6px 8px 6px 0;
+      padding: 9px 13px;
+      background: #005F73;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 820px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin-top: 14px;
+    }
+
+    ul {
+      margin-top: 6px;
+    }
+
+    .small {
+      font-size: 0.92em;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+
+  <p><a href="index.html">← Back to main page</a></p>
+
+  <h1>FDF 2026 Poster</h1>
+
+  <div class="card">
+    <h2>Geant4-driven realistic waveform generation for FPGA algorithm verification in radiation detector readout</h2>
+    <p>
+      This page contains the poster PDF, supporting scripts and selected poster-quality figures
+      for the 3rd FPGA Developers' Forum, CERN, 2026.
+    </p>
+    <p class="small">
+      Poster ID: 75 · Track: HDL verification and simulation tools
+    </p>
+  </div>
+
+  <h2>Poster PDF</h2>
+
+  <div class="button-row">
+    <a href="fdf2026-poster.pdf" target="_blank">Open poster PDF</a>
+  </div>
+
+  <iframe src="fdf2026-poster.pdf"></iframe>
+
+  <h2>Supporting scripts</h2>
+  <ul>
+    <li><a href="fdf2026-generate_waveforms.py">generate_waveforms.py</a> — waveform and truth-label generation</li>
+    <li><a href="fdf2026-plot_clean_psd.py">plot_clean_psd.py</a> — PSD plotting</li>
+    <li><a href="fdf2026-plot_pileup_case.py">plot_pileup_case.py</a> — pile-up corner-case visualization</li>
+    <li><a href="fdf2026-compare_hdl_results.py">compare_hdl_results.py</a> — HDL replay comparison summary</li>
+    <li><a href="fdf2026-dataset_summary.py">dataset_summary.py</a> — dataset summary</li>
+  </ul>
+
+  <h2>Selected poster figures</h2>
+  <ul>
+    <li><a href="fdf2026-example_gamma_neutron_waveform.pdf" target="_blank">Representative gamma-like and neutron-like waveforms</a></li>
+    <li><a href="fdf2026-pileup_corner_case.pdf" target="_blank">Pile-up corner-case waveform</a></li>
+    <li><a href="fdf2026-psd_hist_clean.pdf" target="_blank">PSD distribution for gamma- and neutron-like waveforms</a></li>
+  </ul>
+
+  <h2>Scope note</h2>
+  <p>
+    This work is a verification-oriented demonstrator workflow. It is not intended as a fully validated
+    neutron/gamma detector-response model.
+  </p>
+
+</body>
+</html>
